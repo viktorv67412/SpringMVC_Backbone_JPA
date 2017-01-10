@@ -81,7 +81,7 @@ window.UserView = Backbone.View.extend({
     saveUser: function () {
         this.model.set({
             name: $('#name').val(),
-            age: $('#age').val(),
+            age: $('#age').val()
         });
         if (this.model.isNew()) {
             var self = this;

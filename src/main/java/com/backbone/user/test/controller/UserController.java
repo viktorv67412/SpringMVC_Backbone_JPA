@@ -29,16 +29,15 @@ public class UserController {
     public static void main(String[] args) {
         System.out.println(System.getProperty("java.library.path"));
     }
+
     @RequestMapping(value = "/{id}", method = RequestMethod.DELETE)
     public
     @ResponseBody
-    User delete(@PathVariable("id") Integer id)
-{
+    User delete(@PathVariable("id") Integer id) {
         userRepository.delete(id);
         userRepository.flush();
         return new User();
     }
-
 
     @RequestMapping(value = "/", method = RequestMethod.GET)
     public
@@ -70,6 +69,6 @@ public class UserController {
     User update(@RequestBody User user) {
         userRepository.saveAndFlush(user);
         return user;
-     }
+    }
 
 }
