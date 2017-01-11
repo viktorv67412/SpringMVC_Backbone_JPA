@@ -37,8 +37,8 @@
 
     <beans:bean id="jpaVendorAdapter"
                 class="org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter">
-        <beans:property name="showSql" value="false"/>
-        <beans:property name="database" value="H2"/>
+        <beans:property name="showSql" value="true"/>
+        <!--<beans:property name="database" value="H2"/>-->
     </beans:bean>
 
     <beans:bean

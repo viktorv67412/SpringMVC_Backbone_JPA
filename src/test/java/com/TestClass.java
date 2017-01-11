@@ -1,24 +1,17 @@
 package com;
 
-
 import com.backbone.user.test.entity.User;
 import com.backbone.user.test.repository.UserRepository;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
-import org.junit.Test;
-import org.mockito.Spy;
-import org.mockito.stubbing.OngoingStubbing;
-
-import java.util.ArrayList;
-import java.util.Arrays;
+import org.junit.Test;;
 import java.util.List;
 
 import static org.mockito.Mockito.doReturn;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.spy;
-import static org.mockito.Mockito.when;
 
 /**
  * Created by viktor on 1/10/17.
